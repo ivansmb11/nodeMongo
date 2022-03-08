@@ -6,7 +6,7 @@ const path = require('path');
 
 // initializations
 const app = express();
-require('./database.js'); // TODO: No se conecta a la DB.
+require('./database.js');
 
 // settings
 app.set('port', process.env.PORT || 3000);
