@@ -38,7 +38,7 @@ router.get('/notes', async (req, res) => {
 
 router.get('/notes/edit/:id', async (req, res) => {
     const note = await Note.findById(req.params.id).lean();
-    res.render('/notes/edit-note', { note });
+    res.render('/notes/edit-note.hbs', { note });
 }); //TODO: no crea la vista edit
 
 module.exports = router;
